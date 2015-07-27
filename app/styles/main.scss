@@ -1,7 +1,8 @@
 $icon-font-path: "/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 @import 'bootstrap-sass-official/assets/stylesheets/bootstrap.scss';
 
-@import '_sprite';
+// uncomment next line if you will be placing images to sprite in the ../images/sprite folder
+// @import '_sprite';
 @import '_variables';
 
 @import '../bower_components/sass-mq/mq';

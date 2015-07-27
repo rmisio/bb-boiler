@@ -1,0 +1,21 @@
+Using grunt-svgstore, any SVGs place in this folder will be combined into
+../sprite.svg. Using grunt-processhtml, sprite.svg will be embedded into
+our index.html. The SVG's can then be used in the html using the <use> tag,
+for example:
+
+<svg>
+  <use xlink:href="#Svg-ID" />
+</svg>
+
+This system is described here:
+https://css-tricks.com/svg-sprites-use-better-icon-fonts/
+
+Please Note:
+When adding your first SVG to the folder, the watcher probably will not
+automatically pick it up. This is a known issue:
+https://github.com/gruntjs/grunt-contrib-watch/issues/282
+
+In that case, you will need to restart your 'grunt serve' process, or
+manually run 'grunt svgstore'. After the first svg is added, the
+watcher will work as expected.
+
