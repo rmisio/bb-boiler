@@ -11,11 +11,11 @@ This system is described here:
 https://css-tricks.com/svg-sprites-use-better-icon-fonts/
 
 Please Note:
-When adding your first SVG to the folder, the watcher probably will not
-automatically pick it up. This is a known issue:
+When adding your first SVGs to the folder, the watcher probably will not
+automatically pick them up. This is a known issue:
 https://github.com/gruntjs/grunt-contrib-watch/issues/282
 
 In that case, you will need to restart your 'grunt serve' process, or
-manually run 'grunt svgstore'. After the first svg is added, the
+manually run 'grunt svgstore'. After the first SVGs are picked up, the
 watcher will work as expected.
 

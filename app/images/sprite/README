@@ -1,5 +1,13 @@
 Using Grunt and css-sprite, any PNGs put in this folder will automatically be
 combined into a ../sprite.png and a corresponding styles/_sprite.scss file
-will be created/updated. As of now, livereload is not auto-magically reloading
-the server when this happens, so we'll have to be in touch with our old-school
-selves and manually reload (or have some fun with the gruntfile and make it work).
+will be created/updated.
+
+Please Note:
+When adding your first PNGs to the folder, the watcher probably will not
+automatically pick them up. This is a known issue:
+https://github.com/gruntjs/grunt-contrib-watch/issues/282
+
+In that case, you will need to restart your 'grunt serve' process, or
+manually run 'grunt css_sprite'. After the first PNGs are picked up, the
+watcher will work as expected.
+
